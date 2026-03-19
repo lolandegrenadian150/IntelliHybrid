@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use IntelliHybrid in your research or production systems, please cite it as below."
+type: software
+title: "IntelliHybrid: Intelligent On-Premise to AWS Cloud Connector"
+version: 1.0.0
+date-released: "2025-01-15"
+authors:
+  - family-names: "Kadam"
+    given-names: "Shailesh"
+    alias: "Clever-Boy"
+    affiliation: "Independent Researcher"
+    city: "Dallas"
+    country: "US"
+repository-code: "https://github.com/Clever-Boy/IntelliHybrid"
+url: "https://github.com/Clever-Boy/IntelliHybrid"
+abstract: >
+  IntelliHybrid is a production-ready, configuration-driven framework
+  for secure bidirectional integration between on-premise databases and
+  AWS DynamoDB. It auto-provisions DynamoDB tables with configurable
+  PK/SK schemas, manages VPN connectivity (Site-to-Site, OpenVPN,
+  Direct Connect), and supports MySQL, PostgreSQL, Oracle, and SQL Server.
+keywords:
+  - "hybrid cloud"
+  - "AWS DynamoDB"
+  - "on-premise integration"
+  - "cloud connector"
+  - "data synchronization"
+  - "VPN"
+  - "cloud migration"
+license: MIT

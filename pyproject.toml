@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "intellihybrid"
+version = "1.0.0"
+description = "Intelligent On-Premise to AWS Cloud Connector — secure bidirectional sync between on-prem databases and DynamoDB"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Shailesh Kadam", email = "shailesh@example.com"}
+]
+keywords = [
+    "hybrid cloud", "aws", "dynamodb", "on-premise", "cloud integration",
+    "vpn", "data sync", "database", "cloud migration"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Topic :: Database",
+    "Topic :: System :: Distributed Computing",
+    "Topic :: Internet",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "boto3>=1.34.0",
+    "botocore>=1.34.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+mysql = ["PyMySQL>=1.1.0"]
+postgres = ["psycopg2-binary>=2.9.0"]
+oracle = ["oracledb>=2.0.0"]
+mssql = ["pyodbc>=5.0.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pytest-mock>=3.0",
+    "moto[dynamodb,ec2]>=5.0",
+    "flake8>=6.0",
+]
+all = [
+    "PyMySQL>=1.1.0",
+    "psycopg2-binary>=2.9.0",
+    "oracledb>=2.0.0",
+    "pyodbc>=5.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Clever-Boy/IntelliHybrid"
+Documentation = "https://github.com/Clever-Boy/IntelliHybrid/blob/main/docs/HOW_TO_USE.md"
+Repository = "https://github.com/Clever-Boy/IntelliHybrid"
+Issues = "https://github.com/Clever-Boy/IntelliHybrid/issues"
+Zenodo = "https://doi.org/10.5281/zenodo.XXXXXXX"
+
+[project.scripts]
+intellihybrid = "intellihybrid:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["tests/*", "examples/*"]

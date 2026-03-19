@@ -1,0 +1,101 @@
+# ============================================================
+#  IntelliHybrid Configuration Template
+#  Copy this file to config/config.yaml and fill in your values.
+#  NEVER commit config.yaml to source control — add it to .gitignore.
+#  Use ${ENV_VAR_NAME} syntax to pull from environment variables.
+# ============================================================
+
+# ─── AWS Cloud Settings ─────────────────────────────────────
+aws:
+  region: us-east-1                          # AWS region
+  account_id: "${AWS_ACCOUNT_ID}"            # 12-digit account ID
+  access_key_id: "${AWS_ACCESS_KEY_ID}"      # IAM access key
+  secret_access_key: "${AWS_SECRET_ACCESS_KEY}"
+  # session_token: "${AWS_SESSION_TOKEN}"    # Optional: for assumed roles
+  # role_arn: "arn:aws:iam::123456789012:role/IntelliHybridRole"  # Optional
+
+# ─── On-Premise Settings ────────────────────────────────────
+onprem:
+  subnet_cidr: "192.168.0.0/16"             # Your on-prem network CIDR
+
+  database:
+    type: mysql                              # mysql | postgres | oracle | mssql
+    host: 192.168.1.100                      # On-prem DB server IP
+    port: 3306                               # 3306=MySQL, 5432=PG, 1521=Oracle, 1433=MSSQL
+    name: my_production_db
+    username: "${DB_USER}"
+    password: "${DB_PASSWORD}"
+    ssl: true                                # Always use SSL in production
+    connection_pool_size: 5
+    connection_timeout: 30
+
+  vpn:
+    type: site-to-site                       # site-to-site | openvpn | direct-connect
+
+    # ── For site-to-site VPN ──
+    customer_gateway_ip: "203.0.113.10"      # Your on-prem public IP
+    bgp_asn: 65000                           # Your BGP ASN (use 65000 if unsure)
+    # tunnel_inside_cidr: "169.254.0.0/30"  # Optional
+
+    # ── For OpenVPN ──
+    # type: openvpn
+    # customer_gateway_ip: "203.0.113.10"
+    # config_file: "config/my_vpn.ovpn"     # Path to your .ovpn file
+
+    # ── For AWS Direct Connect ──
+    # type: direct-connect
+    # customer_gateway_ip: "203.0.113.10"   # Still required for routing
+
+# ─── DynamoDB Tables ─────────────────────────────────────────
+# Add as many tables as you need. PK and SK types: S=String, N=Number, B=Binary
+dynamodb:
+  tables:
+
+    # Example 1: Users table (String PK only)
+    - name: users-table
+      partition_key:
+        name: userId
+        type: S
+      billing_mode: PAY_PER_REQUEST
+      encryption: true
+      point_in_time_recovery: true
+      tags:
+        Environment: production
+        Owner: shailesh
+
+    # Example 2: Orders table (String PK + String SK)
+    - name: orders-table
+      partition_key:
+        name: orderId
+        type: S
+      sort_key:
+        name: customerId
+        type: S
+      billing_mode: PAY_PER_REQUEST
+      encryption: true
+      point_in_time_recovery: true
+      ttl_attribute: expiresAt              # Optional: auto-expire items
+      gsi:
+        - name: customer-orders-index
+          partition_key:
+            name: customerId
+            type: S
+          sort_key:
+            name: createdAt
+            type: N
+
+    # Example 3: Inventory table (String PK + Number SK)
+    - name: inventory-table
+      partition_key:
+        name: productId
+        type: S
+      sort_key:
+        name: warehouseId
+        type: N
+      billing_mode: PAY_PER_REQUEST
+      encryption: true
+      point_in_time_recovery: true
+
+# ─── General Settings ────────────────────────────────────────
+log_level: INFO                              # DEBUG | INFO | WARNING | ERROR
+sync_interval_seconds: 60                    # How often to sync (continuous mode)

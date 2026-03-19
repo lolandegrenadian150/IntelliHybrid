@@ -1,0 +1,42 @@
+# IntelliHybrid .gitignore
+# NEVER commit credentials or config with real values
+
+# Config with real credentials
+config/config.yaml
+config/tunnel_config.json
+*.ovpn
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# AWS
+.aws/credentials

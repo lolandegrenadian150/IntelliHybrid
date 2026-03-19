@@ -1,0 +1,38 @@
+{
+  "title": "IntelliHybrid: Intelligent On-Premise to AWS Cloud Connector",
+  "description": "IntelliHybrid is a production-ready, configuration-driven framework that enables secure, seamless bidirectional communication between on-premise infrastructure and AWS cloud environments. It automatically provisions DynamoDB tables with configurable Partition Key (PK) and Sort Key (SK) definitions, establishes encrypted VPN tunnels, connects on-premise databases (MySQL, PostgreSQL, Oracle, SQL Server), and performs continuous bidirectional data synchronization — all driven by a single YAML configuration file.",
+  "creators": [
+    {
+      "name": "Kadam, Shailesh",
+      "affiliation": "Independent Researcher",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "hybrid cloud",
+    "on-premise",
+    "AWS",
+    "DynamoDB",
+    "cloud integration",
+    "VPN",
+    "data synchronization",
+    "cloud connector",
+    "AWS cloud",
+    "database replication",
+    "infrastructure as code",
+    "cloud migration"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Clever-Boy/IntelliHybrid",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "version": "1.0.0",
+  "notes": "This software was developed to address the challenge of securely integrating on-premise databases with AWS cloud services. It provides a configuration-driven approach that eliminates the need for custom integration code."
+}
