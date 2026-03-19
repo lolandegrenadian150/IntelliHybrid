@@ -46,7 +46,6 @@ IntelliHybrid bridges the gap between your on-premise data center and AWS cloud 
                          └──────── IntelliHybrid ───────┘
                               (config.yaml drives all)
 ```
-
 ---
 
 ## ⚡ Quick Start (5 Minutes)
