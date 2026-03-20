@@ -61,7 +61,7 @@ Homepage = "https://github.com/Clever-Boy/IntelliHybrid"
 Documentation = "https://github.com/Clever-Boy/IntelliHybrid/blob/main/docs/HOW_TO_USE.md"
 Repository = "https://github.com/Clever-Boy/IntelliHybrid"
 Issues = "https://github.com/Clever-Boy/IntelliHybrid/issues"
-Zenodo = "https://doi.org/10.5281/zenodo.XXXXXXX"
+Zenodo = "https://doi.org/10.5281/zenodo.19121004"
 
 [project.scripts]
 intellihybrid = "intellihybrid:main"

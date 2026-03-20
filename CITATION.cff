@@ -13,6 +13,8 @@ authors:
     country: "US"
 repository-code: "https://github.com/Clever-Boy/IntelliHybrid"
 url: "https://github.com/Clever-Boy/IntelliHybrid"
+DOI: "https://doi.org/10.5281/zenodo.19121004"
+
 abstract: >
   IntelliHybrid is a production-ready, configuration-driven framework
   for secure bidirectional integration between on-premise databases and

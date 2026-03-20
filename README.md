@@ -1,6 +1,7 @@
 # 🔗 IntelliHybrid — Intelligent On-Premise ↔ AWS Cloud Connector
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+https://doi.org/10.5281/zenodo.19121004
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19121004.svg)](https://doi.org/10.5281/zenodo.19121004)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![AWS](https://img.shields.io/badge/AWS-DynamoDB%20%7C%20VPC%20%7C%20IAM-orange)](https://aws.amazon.com)
@@ -28,7 +29,7 @@ IntelliHybrid bridges the gap between your on-premise data center and AWS cloud 
 
 ```
 ┌─────────────────────────────────┐         ┌──────────────────────────────────┐
-│       ON-PREMISE                │         │          AWS CLOUD                │
+│       ON-PREMISE                │         │          AWS CLOUD               │
 │                                 │         │                                  │
 │  ┌─────────────┐                │◄───────►│  ┌──────────────────┐            │
 │  │  Your DB    │                │  VPN /  │  │   DynamoDB       │            │
